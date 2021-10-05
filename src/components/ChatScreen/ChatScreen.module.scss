@@ -1,0 +1,119 @@
+@import '../../styles/breakpoints.scss';
+
+.header {
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.938rem;
+  height: 80px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.info {
+  margin-left: 0.938rem;
+  flex: 1;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.messages_container {
+  padding: 1.875rem;
+  background-color: #f8fafb;
+  min-height: calc(90vh - 80px);
+}
+
+.end {
+  margin-bottom: 5.5rem;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  padding: 0.625rem;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  z-index: 100;
+}
+
+.emoji {
+  font-size: 1.2rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0.8rem;
+
+  input {
+    border: none;
+    flex: 1;
+    background-color: var(--clr-blue-light);
+    padding: 0.5rem 0.2rem;
+    border-radius: var(--br-md);
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.user_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.image {
+  border-radius: var(--br-full);
+}
+
+.date {
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+
+.email {
+  font-weight: bold;
+}
+
+.recipient {
+  background-color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--br-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    color: white;
+  }
+}
+
+.back {
+  font-size: 1.75rem;
+  margin-right: 0.75rem;
+  cursor: pointer;
+
+  @include respond(sm) {
+    display: none;
+  }
+}

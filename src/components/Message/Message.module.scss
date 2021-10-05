@@ -1,0 +1,32 @@
+.msg_element {
+  margin: 0.625rem;
+  min-width: 60px;
+  padding-bottom: 1.625rem;
+  position: relative;
+  text-align: right;
+}
+
+.sender {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+
+.reciever {
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+.sender,
+.reciever {
+  display: flex;
+  flex-direction: column;
+  padding: 0.938rem;
+  border-radius: var(--br-md);
+  width: fit-content;
+
+  span {
+    text-align: right;
+    font-size: 0.75rem;
+    color: gray;
+  }
+}

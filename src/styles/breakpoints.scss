@@ -1,0 +1,34 @@
+// respond is the name of your mixin
+@mixin respond($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==sm {
+    @media (min-width: 640px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==md {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==lg {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xl {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==xxl {
+    @media (min-width: 1536px) {
+      @content;
+    }
+  }
+}

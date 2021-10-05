@@ -1,0 +1,30 @@
+@import 'breakpoints.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  @include respond(sm) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.chat_container {
+  overflow: scroll;
+  height: 100vh;
+  grid-area: 1 / 3 / 2 / 6;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chat_sidebar {
+  grid-area: 1 / 1 / 2 / 3;
+}

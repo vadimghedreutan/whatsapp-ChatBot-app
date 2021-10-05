@@ -1,0 +1,57 @@
+:root {
+  --roboto-font: 'Roboto', sans-serif;
+
+  // colors
+  --clr-green: rgba(56, 165, 138, 1);
+  --clr-primary: rgba(243, 250, 252, 1);
+  --clr-blue-light: rgba(248, 250, 251, 1);
+  --clr-gray: rgba(156, 163, 175, 1);
+
+  // line-height
+  --line-xs: 1rem;
+  --line-sm: 1.25rem;
+  --line-2xl: 2rem;
+  --line-3xl: 2.25rem;
+  // font-size
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  // border-radius
+  --br-md: 0.375rem;
+  --br-lg: 0.5rem;
+  --br-full: 9999px;
+  // box shadow
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+@import 'reset';
+@import 'typography';
+@import 'breakpoints.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, var(--roboto-font), BlinkMacSystemFont, Segoe UI,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.container {
+  width: auto;
+  flex-grow: 1;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1279px;
+  padding: 0 0.5rem;
+}
+
+main {
+  max-width: 1279px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
